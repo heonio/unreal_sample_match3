@@ -1,0 +1,71 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "4.20",
+	"Category": "Samples",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "Match3",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "AnalyticsBlueprintLibrary",
+			"Enabled": true
+		},
+		{
+			"Name": "OnlineSubsystem",
+			"Enabled": true
+		},
+		{
+			"Name": "OnlineSubsystemNull",
+			"Enabled": true
+		},
+		{
+			"Name": "OnlineSubsystemSteam",
+			"Enabled": true
+		},
+		{
+			"Name": "OnlineSubsystemFacebook",
+			"Enabled": true
+		},
+		{
+			"Name": "OnlineSubsystemIOS",
+			"Enabled": true,
+			"SupportedTargetPlatforms": [
+				"IOS",
+				"TVOS"
+			]
+		},
+		{
+			"Name": "OnlineSubsystemGooglePlay",
+			"Enabled": true,
+			"SupportedTargetPlatforms": [
+				"Android"
+			]
+		}
+	],
+	"PreBuildSteps": {
+		"Android": [
+			"echo =============================== PreBuildSteps 1"
+			, "echo =============================== PPreBuildSteps 2"
+		]
+	},
+	"PostBuildSteps": {
+		"Android": [
+			"echo =============================== PostBuildSteps 1"
+			, "echo =============================== PostBuildSteps 2"
+		]
+	},
+	"TargetPlatforms": [
+		"Android",
+		"Desktop",
+		"IOS"
+	],
+	"EpicSampleNameHash": "2622819489"
+}
